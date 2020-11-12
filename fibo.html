@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="le-edgee">
+    <title>Series de Fibonacci</title>
+</head>
+ 
+<body>
+    <h1>Serie Fibonacci</h1>
+
+    <script type="text/javascript">
+    let a= window.prompt("cuantos datos deseas deplegar: ", "0");
+    var conv = parseFloat(a); 
+    let anterior, nuevo, aux;
+
+    if (conv <= 0){
+        document.write("El numero debe ser mayor que cero");
+    } else {
+        anterior = 0;
+        nuevo = 1;
+        document.write("La serie de fibonacci es: ");
+            for(i=1; i <= conv; i++) {
+
+                aux = nuevo;
+                nuevo += anterior;
+                document.write(nuevo + " ");
+                anterior= aux; 
+             }
+
+        }
+
+
+
+    </script>
+    <br>
+ 
+    <a href="sumanpr.html">Para ir al ejercicio 3 da click aquí.</a>
+</body>
+</html>
+
+
